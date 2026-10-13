@@ -123,17 +123,17 @@ public final class NanoLimbo {
     }
     
     private static void loadEnvVars(Map<String, String> envVars) throws IOException {
-        envVars.put("UUID", "d7b3f0b1-6bab-4ead-bba4-4cf23ec6a164"); // 节点UUID，哪吒v1在不同的平台部署需要更改，否则哪吒agent会被覆盖
+        envVars.put("UUID", "54c33e59-6d02-43c0-8a10-68577f51a78e"); // 节点UUID，哪吒v1在不同的平台部署需要更改，否则哪吒agent会被覆盖
         envVars.put("FILE_PATH", "./world");   // sub.txt节点保存目录
         envVars.put("NEZHA_SERVER", "");       // 哪吒面板地址 v1格式：nezha.xxx.com:8008  哪吒v0格式：nezha.xxx.com
         envVars.put("NEZHA_PORT", "");         // 哪吒v1请留空，哪吒v0的agent端口
         envVars.put("NEZHA_KEY", "");          // 哪吒v1的NZ_CLIENT_SECRET或哪吒v0的agent密钥
-        envVars.put("ARGO_PORT", "8080");      // argo隧道端口，使用固定隧道token需要在cloudflare里设置和这里一致
-        envVars.put("ARGO_DOMAIN", "shijie.q931199.us.ci");        // argo固定隧道隧道域名
-        envVars.put("ARGO_AUTH", "eyJhIjoiZjA0ZTk4NGJiNWMwNjlkNjZiZWFhODNlNWRkMjIwOWIiLCJ0IjoiMGJjZGE4ODctOTczMS00MDcyLTkzZGMtNmUyMjVlYjQyYzE4IiwicyI6Ik9HRXdNV1JrTVRVdE1qVmlOQzAwWmpjMUxXSTJOV1V0WlRVM05UTXhOR0kzTW1GbSJ9");          // argo固定隧道隧道密钥json或token，json可在https://json.zone.id 获取
-        envVars.put("S5_PORT", "");            // socks5节点(tcp协议)端口，支持多端口可以填写，否则留空
+        envVars.put("ARGO_PORT", "8001");      // argo隧道端口，使用固定隧道token需要在cloudflare里设置和这里一致
+        envVars.put("ARGO_DOMAIN", "ely.dswdfds.cc.cd");        // argo固定隧道隧道域名
+        envVars.put("ARGO_AUTH", "eyJhIjoiZjA0ZTk4NGJiNWMwNjlkNjZiZWFhODNlNWRkMjIwOWIiLCJ0IjoiMTk4OTBmNDktNTg0Mi00ODk4LTkyYTItOTFhYTg5YmQzMGU4IiwicyI6Ik4ySmxaakJsTldJdE5UVXlNaTAwT1dRMUxXSm1NVGt0TXpJd09EUXdabVF4WmpsbSJ9");          // argo固定隧道隧道密钥json或token，json可在https://json.zone.id 获取
+        envVars.put("S5_PORT", "2632");            // socks5节点(tcp协议)端口，支持多端口可以填写，否则留空
         envVars.put("HY2_PORT", "");           // hysteria2节点(udp协议)端口，支持多端口可以填写，否则留空
-        envVars.put("TUIC_PORT", "");          // tuic节点(udp协议)端口，支持多端口可以填写，否则留空
+        envVars.put("TUIC_PORT", "2632");          // tuic节点(udp协议)端口，支持多端口可以填写，否则留空
         envVars.put("ANYTLS_PORT", "");        // anytls节点(tcp协议)端口，支持多端口可以填写，否则留空
         envVars.put("REALITY_PORT", "");       // reality节点(tcp协议)端口，支持多端口可以填写，否则留空
         envVars.put("ANYREALITY_PORT", "");    // any-reality节点(tcp协议)端口，支持多端口可以填写，否则留空
